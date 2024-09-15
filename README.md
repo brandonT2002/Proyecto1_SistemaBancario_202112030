@@ -162,19 +162,10 @@
 
 <br>
 
-| Empleados      |
+| Empleado       |
 | -              |
 | Nombre         |
 | Apellido       |
-| DPI            |
-
-<br>
-
-| Empleados      |
-| -              |
-| Nombre         |
-| Apellido       |
-| DPI            |
 | Rol            |
 
 <br>
