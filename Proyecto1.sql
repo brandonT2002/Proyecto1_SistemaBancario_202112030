@@ -79,6 +79,41 @@ BEGIN
     :NEW.Id := incCta.NEXTVAL;
 END;
 
+-- TRANSACCION
+CREATE SEQUENCE incTrn START WITH 1 INCREMENT BY 1;
+
+CREATE TABLE TRANSACCION (
+    Id_transaccion              NUMBER       NOT NULL PRIMARY KEY,
+    Tipo                        VARCHAR2(20) NOT NULL,
+    Monto                       NUMBER(20)   NOT NULL,
+    Fecha                       DATE         NOT NULL,
+    Hora                        TIMESTAMP    NOT NULL,
+    Descripcion                 VARCHAR2(35),
+    Id_cuenta                   NUMBER       NOT NULL,
+    Id_agencia                  NUMBER       NOT NULL,
+    Id_cliente                  NUMBER       NOT NULL,
+    Id_empleado                 NUMBER       NOT NULL,
+    CONSTRAINT FK_Cuenta
+        FOREIGN KEY (Id_cuenta)
+        REFERENCES CUENTA(Id_cuenta),
+    CONSTRAINT FK_Agencia
+        FOREIGN KEY (Id_agencia)
+        REFERENCES AGENCIA_SUCURSAL(Id_agencia),
+    CONSTRAINT FK_Cliente
+        FOREIGN KEY (Id_cliente)
+        REFERENCES CLIENTE(Id_cliente),
+    CONSTRAINT FK_Empleado
+        FOREIGN KEY (Id_empleado)
+        REFERENCES EMPLEADO(Id_empleado)
+);
+
+CREATE OR REPLACE TRIGGER incTrn
+BEFORE INSERT ON TRANSACCION
+FOR EACH ROW
+BEGIN
+    :NEW.Id_transaccion := incTrn.NEXTVAL;
+END;
+
 -- AGENCIA SUCURSAL
 CREATE SEQUENCE incAgs START WITH 1 INCREMENT BY 1;
 
