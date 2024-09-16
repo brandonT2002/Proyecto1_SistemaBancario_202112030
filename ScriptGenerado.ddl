@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 23.1.0.087.0806
---   en:        2024-09-16 07:21:29 CST
+--   en:        2024-09-16 08:32:55 CST
 --   sitio:      Oracle Database 21c
 --   tipo:      Oracle Database 21c
 
@@ -34,9 +34,10 @@ ALTER TABLE cliente ADD CONSTRAINT cliente_pk PRIMARY KEY ( id_cliente );
 CREATE TABLE cuenta (
     tipo               VARCHAR2(20) NOT NULL,
     saldo              NUMBER(20) NOT NULL,
-    id_cuenta          VARCHAR2(20) NOT NULL,
+    id_cuenta          NUMBER NOT NULL,
     cliente_id_cliente NUMBER(20) NOT NULL,
-    tarjeta_id_tarjeta NUMBER NOT NULL
+    tarjeta_id_tarjeta NUMBER NOT NULL,
+    no_cuenta          VARCHAR2(20) NOT NULL
 );
 
 CREATE UNIQUE INDEX cuenta__idx ON
@@ -104,7 +105,7 @@ CREATE TABLE transaccion (
     fecha                       DATE NOT NULL,
     hora                        TIMESTAMP NOT NULL,
     descripcion                 VARCHAR2(35),
-    cuenta_id_cuenta            VARCHAR2(20) NOT NULL,
+    cuenta_id_cuenta            NUMBER NOT NULL,
     agencia_sucursal_id_agencia NUMBER NOT NULL,
     empleado_id_empleado        NUMBER NOT NULL,
     cliente_id_cliente          NUMBER NOT NULL

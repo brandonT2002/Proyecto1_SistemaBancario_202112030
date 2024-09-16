@@ -39,9 +39,8 @@
 <ownerDesignName>Diagrama</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>20</dataTypeSize>
-<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="Cliente_Id_cliente" id="FEF3425D-2DCC-6EF2-3013-97DB55CCEF17">
@@ -74,6 +73,18 @@
 <associations>
 <colAssociation fkAssociation="7F33C62E-60B6-503E-B366-829F2FEAC5D0" referredColumn="CD6F0E6E-4C51-E593-6041-35B22C3A6DCD"/>
 </associations>
+</Column>
+<Column name="No_cuenta" id="4EF2848F-CC1B-E8EE-BE7F-AC8F236A5BA7">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-16 14:32:24 UTC</createdTime>
+<generatorID>87659B46-A35E-2B4C-E6BD-2C611FDEFC47</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
