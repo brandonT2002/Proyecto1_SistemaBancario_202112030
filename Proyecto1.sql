@@ -28,10 +28,13 @@ CREATE TABLE TARJETA (
     Estado              VARCHAR2(10) NOT NULL,
     Fecha_corte         DATE         NOT NULL,
     Dia_ciclo           NUMBER       NOT NULL,
-    Cliente_id_cliente  NUMBER       NOT NULL,
+    Id_cliente          NUMBER       NOT NULL,
     CONSTRAINT Fk_Cliente
-        FOREIGN KEY (Cliente_id_cliente)
-        REFERENCES CLIENTE(Id_cliente)
+        FOREIGN KEY (Id_cliente)
+        REFERENCES CLIENTE(Id_cliente),
+    CONSTRAINT Fk_Cuenta
+        FOREIGN KEY (Id_cuenta)
+        REFERENCES CUENTA(Id_cuenta)
 );
 
 CREATE OR REPLACE TRIGGER incTjt
@@ -52,10 +55,14 @@ CREATE TABLE PRESTAMO (
     Fecha_vencimiento   DATE         NOT NULL,
     Saldo_pendiente     NUMBER(20)   NOT NULL,
     Estado              VARCHAR2(10) NOT NULL,
-    Cliente_id_cliente  NUMBER       NOT NULL,
+    Id_cliente          NUMBER       NOT NULL,
+    Id_empleado         NUMBER       NOT NULL,
     CONSTRAINT Fk_Cliente
-        FOREIGN KEY (Cliente_id_cliente)
-        REFERENCES CLIENTE(Id_cliente)
+        FOREIGN KEY (Id_cliente)
+        REFERENCES CLIENTE(Id_cliente),
+    CONSTRAINT Fk_Empleado
+        FOREIGN KEY (Id_empleado)
+        REFERENCES EMPLEADO(Id_empleado)
 );
 
 -- CUENTA
