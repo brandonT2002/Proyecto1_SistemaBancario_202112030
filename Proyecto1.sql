@@ -1,31 +1,32 @@
--- USUARIO
-CREATE SEQUENCE incUsr START WITH 1 INCREMENT BY 1;
+-- CLIENTE
+CREATE SEQUENCE incClt START WITH 1 INCREMENT BY 1;
 
-CREATE TABLE USUARIO (
-    Id NUMBER PRIMARY KEY,
-    Usuario VARCHAR(20),
-    Email VARCHAR(35),
-    Password VARCHAR(20)
+CREATE TABLE CLIENTE (
+    Id_cliente  NUMBER       NOT NULL PRIMARY KEY,
+    Nombre      VARCHAR2(20) NOT NULL,
+    Apellido    VARCHAR2(20) NOT NULL,
+    Telefono    VARCHAR2(15) NOT NULL
 );
 
-CREATE OR REPLACE TRIGGER incUsr
-BEFORE INSERT ON USUARIO
+CREATE OR REPLACE TRIGGER incClt
+BEFORE INSERT ON CLIENTE
 FOR EACH ROW
 BEGIN
-    :NEW.Id := incUsr.NEXTVAL;
+    :NEW.Id_cliente := incClt.NEXTVAL;
 END;
 
 -- CUENTA
 CREATE SEQUENCE incCta START WITH 1 INCREMENT BY 1;
 
 CREATE TABLE CUENTA (
-    Id NUMBER PRIMARY KEY,
-    NoCuenta VARCHAR(20) UNIQUE,
-    Saldo NUMBER,
-    UsuarioId NUMBER,
-    CONSTRAINT FkUsuario
-        FOREIGN KEY (UsuarioId)
-        REFERENCES Usuario (Id)
+    Id_cuenta           NUMBER       NOT NULL PRIMARY KEY,
+    No_cuenta           VARCHAR2(20) NOT NULL UNIQUE,
+    Tipo                VARCHAR2(20) NOT NULL,
+    Saldo               NUMBER(20)   NOT NULL,
+    Cliente_id_cliente  NUMBER       NOT NULL,
+    CONSTRAINT Fk_Cliente
+        FOREIGN KEY (Cliente_id_cliente)
+        REFERENCES CLIENTE(Id_cliente)
 );
 
 CREATE OR REPLACE TRIGGER incCta
@@ -37,9 +38,9 @@ END;
 
 -- INSERTS
 -- Usuarios
-INSERT INTO USUARIO (Usuario, Email, Password) VALUES ('Brandon Tejaxun', 'br@gmail.com', 'hello');
-INSERT INTO USUARIO (Usuario, Email, Password) VALUES ('Israel Ajsivinac', 'aj@gmail.com', 'hello');
-INSERT INTO USUARIO (Usuario, Email, Password) VALUES ('Andres Agosto', 'aa@gmail.com', 'hello');
+INSERT INTO CLIENTE (CLIENTE, Email, Password) VALUES ('Brandon Tejaxun', 'br@gmail.com', 'hello');
+INSERT INTO CLIENTE (CLIENTE, Email, Password) VALUES ('Israel Ajsivinac', 'aj@gmail.com', 'hello');
+INSERT INTO CLIENTE (CLIENTE, Email, Password) VALUES ('Andres Agosto', 'aa@gmail.com', 'hello');
 
 INSERT INTO CUENTA (NoCuenta, Saldo, UsuarioId) VALUES ('123', 100.00, 1);
 INSERT INTO CUENTA (NoCuenta, Saldo, UsuarioId) VALUES ('159', 2000.00, 1);
@@ -48,21 +49,21 @@ INSERT INTO CUENTA (NoCuenta, Saldo, UsuarioId) VALUES ('789', 150.00, 3);
 
 
 
--- consultas B�sicas
-DROP TABLE USUARIO;
+-- consultas Basicas
+DROP TABLE CLIENTE;
 DROP TABLE CUENTA;
-DROP SEQUENCE incUsr;
+DROP SEQUENCE incClt;
 DROP SEQUENCE incCta;
-SELECT * FROM USUARIO;
+SELECT * FROM CLIENTE;
 SELECT * FROM CUENTA;
 
 -- CONSULTAS 'CUENTA ID'
 SELECT 
-    u.Usuario   AS "Nombre de Usuario",
+    u.CLIENTE   AS "Nombre de CLIENTE",
     c.NoCuenta  AS "Numero de Cuenta", 
     c.Saldo     AS "Saldo de Cuenta"
 FROM CUENTA c
-JOIN USUARIO u ON c.UsuarioId = u.Id
-WHERE u.Usuario = 'Brandon Tejaxun';
+JOIN CLIENTE u ON c.UsuarioId = u.Id
+WHERE u.CLIENTE = 'Brandon Tejaxun';
 
 
