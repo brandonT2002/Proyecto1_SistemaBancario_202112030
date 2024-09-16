@@ -15,6 +15,25 @@ BEGIN
     :NEW.Id_cliente := incClt.NEXTVAL;
 END;
 
+-- TARJETA
+CREATE SEQUENCE incTjt START WITH 1 INCREMENT BY 1;
+
+CREATE TABLE TARJETA (
+    Id_tarjeta          NUMBER       NOT NULL PRIMARY KEY,
+    No_tarjeta          VARCHAR2(20) NOT NULL UNIQUE,
+    Limite_credito      NUMBER(20)   NOT NULL,
+    Saldo_actual        NUMBER(20)   NOT NULL,
+    Fecha_vencimiento   DATE         NOT NULL,
+    Fecha_expiracion    DATE         NOT NULL,
+    Estado              VARCHAR2(10) NOT NULL,
+    Fecha_corte         DATE         NOT NULL,
+    Dia_ciclo           NUMBER       NOT NULL,
+    Cliente_id_cliente  NUMBER       NOT NULL,
+    CONSTRAINT Fk_Cliente
+        FOREIGN KEY (Cliente_id_cliente)
+        REFERENCES CLIENTE(Id_cliente)
+);
+
 -- CUENTA
 CREATE SEQUENCE incCta START WITH 1 INCREMENT BY 1;
 
