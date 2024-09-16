@@ -175,3 +175,10 @@
 | Nombre           |
 | Municipio        |
 | Departamento     |
+
+## **Diseño Lógico y Entidad Relación**
+
+<div align="center">
+    <img src="Img/img1.png">
+    <img src="Img/img2.png">
+</div>

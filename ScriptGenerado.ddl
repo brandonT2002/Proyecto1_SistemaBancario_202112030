@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 23.1.0.087.0806
---   en:        2024-09-15 05:04:44 CST
+--   en:        2024-09-16 07:21:29 CST
 --   sitio:      Oracle Database 21c
 --   tipo:      Oracle Database 21c
 
@@ -22,20 +22,6 @@ CREATE TABLE agencia_sucursal (
 
 ALTER TABLE agencia_sucursal ADD CONSTRAINT agencia_sucursal_pk PRIMARY KEY ( id_agencia );
 
-CREATE TABLE asesor (
-    id_asesor            NUMBER NOT NULL,
-    empleado_id_empleado NUMBER NOT NULL
-);
-
-ALTER TABLE asesor ADD CONSTRAINT asesor_pk PRIMARY KEY ( id_asesor );
-
-CREATE TABLE cajero (
-    id_cajero            NUMBER NOT NULL,
-    empleado_id_empleado NUMBER NOT NULL
-);
-
-ALTER TABLE cajero ADD CONSTRAINT cajero_pk PRIMARY KEY ( id_cajero );
-
 CREATE TABLE cliente (
     nombre     VARCHAR2(20) NOT NULL,
     apellido   VARCHAR2(20) NOT NULL,
@@ -49,8 +35,14 @@ CREATE TABLE cuenta (
     tipo               VARCHAR2(20) NOT NULL,
     saldo              NUMBER(20) NOT NULL,
     id_cuenta          VARCHAR2(20) NOT NULL,
-    cliente_id_cliente NUMBER NOT NULL
+    cliente_id_cliente NUMBER(20) NOT NULL,
+    tarjeta_id_tarjeta NUMBER NOT NULL
 );
+
+CREATE UNIQUE INDEX cuenta__idx ON
+    cuenta (
+        tarjeta_id_tarjeta
+    ASC );
 
 ALTER TABLE cuenta ADD CONSTRAINT cuenta_pk PRIMARY KEY ( id_cuenta );
 
@@ -62,42 +54,45 @@ CREATE TABLE empleado (
     departamento                VARCHAR2(20) NOT NULL,
     agrencia_sucursal           VARCHAR2(35) NOT NULL,
     telefono                    VARCHAR2(15) NOT NULL,
-    agencia_sucursal_id_agencia NUMBER NOT NULL
+    agencia_sucursal_id_agencia NUMBER NOT NULL,
+    rol_id_rol                  NUMBER NOT NULL
 );
 
 ALTER TABLE empleado ADD CONSTRAINT empleado_pk PRIMARY KEY ( id_empleado );
 
-CREATE TABLE gerente (
-    id_gerente           NUMBER NOT NULL,
-    empleado_id_empleado NUMBER NOT NULL
-);
-
-ALTER TABLE gerente ADD CONSTRAINT gerente_pk PRIMARY KEY ( id_gerente );
-
 CREATE TABLE prestamo (
-    id_prestamo        NUMBER NOT NULL,
-    monto              NUMBER(20) NOT NULL,
-    interes            NUMBER(2, 2) NOT NULL,
-    fecha_desembolso   DATE NOT NULL,
-    fecha_vencimiento  DATE NOT NULL,
-    saldo_pendiente    NUMBER(20) NOT NULL,
-    estado             VARCHAR2(10) NOT NULL,
-    cliente_id_cliente NUMBER NOT NULL
+    id_prestamo          NUMBER NOT NULL,
+    monto                NUMBER(20) NOT NULL,
+    interes              NUMBER(2, 2) NOT NULL,
+    fecha_desembolso     DATE NOT NULL,
+    fecha_vencimiento    DATE NOT NULL,
+    saldo_pendiente      NUMBER(20) NOT NULL,
+    estado               VARCHAR2(10) NOT NULL,
+    cliente_id_cliente   NUMBER(20) NOT NULL,
+    empleado_id_empleado NUMBER NOT NULL
 );
 
 ALTER TABLE prestamo ADD CONSTRAINT prestamo_pk PRIMARY KEY ( id_prestamo );
 
+CREATE TABLE rol (
+    id_rol NUMBER NOT NULL,
+    nombre VARCHAR2(20) NOT NULL
+);
+
+ALTER TABLE rol ADD CONSTRAINT rol_pk PRIMARY KEY ( id_rol );
+
 CREATE TABLE tarjeta (
-    id_tarjeta         NUMBER NOT NULL,
-    no_tarjeta         VARCHAR2(16) NOT NULL,
-    limite_credito     NUMBER(20) NOT NULL,
-    saldo_actual       NUMBER(20) NOT NULL,
-    fecha_emision      DATE NOT NULL,
-    fecha_expiracion   DATE NOT NULL,
-    estado             VARCHAR2(10) NOT NULL,
-    fecha_corte        DATE NOT NULL,
-    dia_ciclo          NUMBER(2) NOT NULL,
-    cliente_id_cliente NUMBER NOT NULL
+    id_tarjeta           NUMBER NOT NULL,
+    no_tarjeta           VARCHAR2(16) NOT NULL,
+    limite_credito       NUMBER(20) NOT NULL,
+    saldo_actual         NUMBER(20) NOT NULL,
+    fecha_emision        DATE NOT NULL,
+    fecha_expiracion     DATE NOT NULL,
+    estado               VARCHAR2(10) NOT NULL,
+    fecha_corte          DATE NOT NULL,
+    dia_ciclo            NUMBER(2) NOT NULL,
+    cliente_id_cliente   NUMBER(20) NOT NULL,
+    empleado_id_empleado NUMBER NOT NULL
 );
 
 ALTER TABLE tarjeta ADD CONSTRAINT tarjeta_pk PRIMARY KEY ( id_tarjeta );
@@ -110,54 +105,68 @@ CREATE TABLE transaccion (
     hora                        TIMESTAMP NOT NULL,
     descripcion                 VARCHAR2(35),
     cuenta_id_cuenta            VARCHAR2(20) NOT NULL,
-    agencia_sucursal_id_agencia NUMBER NOT NULL
+    agencia_sucursal_id_agencia NUMBER NOT NULL,
+    empleado_id_empleado        NUMBER NOT NULL,
+    cliente_id_cliente          NUMBER NOT NULL
 );
 
 ALTER TABLE transaccion ADD CONSTRAINT transaccion_pk PRIMARY KEY ( id_transaccion );
-
-ALTER TABLE asesor
-    ADD CONSTRAINT asesor_empleado_fk FOREIGN KEY ( empleado_id_empleado )
-        REFERENCES empleado ( id_empleado );
-
-ALTER TABLE cajero
-    ADD CONSTRAINT cajero_empleado_fk FOREIGN KEY ( empleado_id_empleado )
-        REFERENCES empleado ( id_empleado );
 
 ALTER TABLE cuenta
     ADD CONSTRAINT cuenta_cliente_fk FOREIGN KEY ( cliente_id_cliente )
         REFERENCES cliente ( id_cliente );
 
+ALTER TABLE cuenta
+    ADD CONSTRAINT cuenta_tarjeta_fk FOREIGN KEY ( tarjeta_id_tarjeta )
+        REFERENCES tarjeta ( id_tarjeta );
+
 ALTER TABLE empleado
     ADD CONSTRAINT empleado_agencia_sucursal_fk FOREIGN KEY ( agencia_sucursal_id_agencia )
         REFERENCES agencia_sucursal ( id_agencia );
 
-ALTER TABLE gerente
-    ADD CONSTRAINT gerente_empleado_fk FOREIGN KEY ( empleado_id_empleado )
-        REFERENCES empleado ( id_empleado );
+ALTER TABLE empleado
+    ADD CONSTRAINT empleado_rol_fk FOREIGN KEY ( rol_id_rol )
+        REFERENCES rol ( id_rol );
 
 ALTER TABLE prestamo
     ADD CONSTRAINT prestamo_cliente_fk FOREIGN KEY ( cliente_id_cliente )
         REFERENCES cliente ( id_cliente );
 
+ALTER TABLE prestamo
+    ADD CONSTRAINT prestamo_empleado_fk FOREIGN KEY ( empleado_id_empleado )
+        REFERENCES empleado ( id_empleado );
+
 ALTER TABLE tarjeta
     ADD CONSTRAINT tarjeta_cliente_fk FOREIGN KEY ( cliente_id_cliente )
         REFERENCES cliente ( id_cliente );
+
+ALTER TABLE tarjeta
+    ADD CONSTRAINT tarjeta_empleado_fk FOREIGN KEY ( empleado_id_empleado )
+        REFERENCES empleado ( id_empleado );
 
 ALTER TABLE transaccion
     ADD CONSTRAINT transaccion_agencia_sucursal_fk FOREIGN KEY ( agencia_sucursal_id_agencia )
         REFERENCES agencia_sucursal ( id_agencia );
 
 ALTER TABLE transaccion
+    ADD CONSTRAINT transaccion_cliente_fk FOREIGN KEY ( cliente_id_cliente )
+        REFERENCES cliente ( id_cliente );
+
+ALTER TABLE transaccion
     ADD CONSTRAINT transaccion_cuenta_fk FOREIGN KEY ( cuenta_id_cuenta )
         REFERENCES cuenta ( id_cuenta );
+
+ALTER TABLE transaccion
+    ADD CONSTRAINT transaccion_empleado_fk FOREIGN KEY ( empleado_id_empleado )
+        REFERENCES empleado ( id_empleado );
 
 
 
 -- Informe de Resumen de Oracle SQL Developer Data Modeler: 
 -- 
--- CREATE TABLE                            10
--- CREATE INDEX                             0
--- ALTER TABLE                             19
+-- CREATE TABLE                             8
+-- CREATE INDEX                             1
+-- ALTER TABLE                             20
 -- CREATE VIEW                              0
 -- ALTER VIEW                               0
 -- CREATE PACKAGE                           0
