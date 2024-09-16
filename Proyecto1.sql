@@ -79,6 +79,68 @@ BEGIN
     :NEW.Id := incCta.NEXTVAL;
 END;
 
+-- AGENCIA SUCURSAL
+CREATE SEQUENCE incAgs START WITH 1 INCREMENT BY 1;
+
+CREATE TABLE AGENCIA_SUCURSAL (
+    Id_agencia           NUMBER       NOT NULL PRIMARY KEY,
+    Nombre               VARCHAR2(35) NOT NULL,
+    Tipo                 VARCHAR2(10) NOT NULL,
+    Departamento         VARCHAR2(20) NOT NULL,
+    Municipio            VARCHAR2(20) NOT NULL,
+    Direccion            VARCHAR2(20) NOT NULL,
+    Codigo_postal        VARCHAR2(5)  NOT NULL,
+    Telefono             VARCHAR2(15) NOT NULL
+);
+
+CREATE OR REPLACE TRIGGER incAgs
+BEFORE INSERT ON AGENCIA_SUCURSAL
+FOR EARCH ROW
+BEGIN
+    :NEW.Id_agencia := incAgs.NEXTVAL;
+END;
+
+-- EMPLEADO
+CREATE SEQUENCE incEmp START WITH 1 INCREMENT BY 1;
+
+CREATE TABLE EMPLEADO (
+    Id_empleado  NUMBER       NOT NULL PRIMARY KEY,
+    Nombre       VARCHAR2(20) NOT NULL,
+    Apellido     VARCHAR2(20) NOT NULL,
+    Rol          VARCHAR2(20) NOT NULL,
+    Telefono     VARCHAR2(15) NOT NULL,
+    Id_agencia   NUMBER       NOT NULL,
+    Id_rol       NUMBER       NOT NULL,
+    CONSTRAINT Fk_Agencia
+        FOREIGN KEY (Id_agencia)
+        REFERENCES AGENCIA_SUCURSAL(Id_agencia),
+    CONSTRAINT Fk_Rol
+        FOREIGN KEY (Id_rol)
+        REFERENCES ROL(Id_rol)
+);
+
+CREATE OR REPLACE TRIGGER incEmp
+BEFORE INSERT ON EMPLEADO
+FOR EACH ROW
+BEGIN
+    :NEW.Id_empleado := incEmp.NEXTVAL;
+END;
+
+-- ROL
+CREATE SEQUENCE incRol START WITH 1 INCREMENT BY 1;
+
+CREATE TABLE ROL (
+    Id_rol  NUMBER       NOT NULL PRIMARY KEY,
+    Rol     VARCHAR2(20) NOT NULL
+);
+
+CREATE OR REPLACE TRIGGER incRol
+BEFORE INSERT ON ROL
+FOR EACH ROW
+BEGIN
+    :NEW.Id_rol := incRol.NEXTVAL;
+END;
+
 -- INSERTS
 -- Usuarios
 INSERT INTO CLIENTE (CLIENTE, Email, Password) VALUES ('Brandon Tejaxun', 'br@gmail.com', 'hello');
