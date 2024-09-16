@@ -41,6 +41,23 @@ BEGIN
     :NEW.Id_tarjeta := incTjt.NEXTVAL;
 END;
 
+-- PRESTAMO
+CREATE SEQUENCE incPst START WITH 1 INCREMENT BY 1;
+
+CREATE TABLE PRESTAMO (
+    Id_prestamo         NUMBER       NOT NULL PRIMARY KEY,
+    Monto               NUMBER(20)   NOT NULL,
+    Interes             NUMBER(2,2)  NOT NULL,
+    Fecha_desembolso    DATE         NOT NULL,
+    Fecha_vencimiento   DATE         NOT NULL,
+    Saldo_pendiente     NUMBER(20)   NOT NULL,
+    Estado              VARCHAR2(10) NOT NULL,
+    Cliente_id_cliente  NUMBER       NOT NULL,
+    CONSTRAINT Fk_Cliente
+        FOREIGN KEY (Cliente_id_cliente)
+        REFERENCES CLIENTE(Id_cliente)
+);
+
 -- CUENTA
 CREATE SEQUENCE incCta START WITH 1 INCREMENT BY 1;
 
