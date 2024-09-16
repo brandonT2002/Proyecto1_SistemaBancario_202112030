@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="008CB3C5-7785-AE45-21B8-970F45E39AA9" name="Cuenta">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 09:26:08 UTC</createdTime>
+<ownerDesignName>Diagrama</ownerDesignName>
+<engineerTo>
+<item key="551B6461-CA27-D845-6439-9DF4BDC9EF04" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_cuenta" id="302EEF67-7360-4942-0C14-A0B9D76FC8F3">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 09:31:04 UTC</createdTime>
+<ownerDesignName>Diagrama</ownerDesignName>
+<engineerTo>
+<item key="551B6461-CA27-D845-6439-9DF4BDC9EF04" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tipo" id="F2B33D7E-DF8F-1ED9-2972-CBD26E218B75">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 09:26:25 UTC</createdTime>
+<ownerDesignName>Diagrama</ownerDesignName>
+<engineerTo>
+<item key="551B6461-CA27-D845-6439-9DF4BDC9EF04" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Saldo" id="DB301E57-1B61-4086-0BAC-F815A966939D">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 09:27:30 UTC</createdTime>
+<ownerDesignName>Diagrama</ownerDesignName>
+<engineerTo>
+<item key="551B6461-CA27-D845-6439-9DF4BDC9EF04" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_cliente" id="B77A2800-EDCA-D95F-0025-F34A37A952DF">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 09:32:22 UTC</createdTime>
+<generatorID>F0B8D9EC-A348-5ECD-8C3C-0E19230D264A</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<engineerTo>
+<item key="551B6461-CA27-D845-6439-9DF4BDC9EF04" value="true"/>
+</engineerTo>
+<referedAttribute>1045C7B0-12F1-40A3-1331-E6C5F520BE7C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_tarjeta" id="9D58EA96-FCC3-F99D-E127-BDC3319C6BF9">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-16 03:32:22 UTC</createdTime>
+<generatorID>3B490B60-FC1D-4257-8693-67E2A9DEC409</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<engineerTo>
+<item key="551B6461-CA27-D845-6439-9DF4BDC9EF04" value="true"/>
+</engineerTo>
+<referedAttribute>45818266-5EBA-0141-602D-0013FD7D7EAB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="514328E4-B082-5BB6-663B-DAA4826C21C9" name="Cuenta PK">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 09:32:00 UTC</createdTime>
+<ownerDesignName>Diagrama</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="551B6461-CA27-D845-6439-9DF4BDC9EF04" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>302EEF67-7360-4942-0C14-A0B9D76FC8F3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

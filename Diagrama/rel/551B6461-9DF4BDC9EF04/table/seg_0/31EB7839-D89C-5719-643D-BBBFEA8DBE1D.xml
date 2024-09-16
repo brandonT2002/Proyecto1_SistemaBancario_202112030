@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="31EB7839-D89C-5719-643D-BBBFEA8DBE1D" name="Cuenta">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 09:29:00 UTC</createdTime>
+<generatorID>008CB3C5-7785-AE45-21B8-970F45E39AA9</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Tipo" id="1C92A07D-84BD-D3FF-E7F0-3A0D61F5E348">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 09:29:00 UTC</createdTime>
+<generatorID>F2B33D7E-DF8F-1ED9-2972-CBD26E218B75</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Saldo" id="EECCDC7F-FBE3-0378-92E2-6C918BFD4EF8">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 09:29:00 UTC</createdTime>
+<generatorID>DB301E57-1B61-4086-0BAC-F815A966939D</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Id_cuenta" id="075AA717-C92E-3BE7-2A5C-606CFDDFF30E">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 09:32:11 UTC</createdTime>
+<generatorID>302EEF67-7360-4942-0C14-A0B9D76FC8F3</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cliente_Id_cliente" id="FEF3425D-2DCC-6EF2-3013-97DB55CCEF17">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 09:32:31 UTC</createdTime>
+<generatorID>B77A2800-EDCA-D95F-0025-F34A37A952DF</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7B63C44E-E626-CB4B-0296-1FCAF6ABAD76" referredColumn="55F34C68-7E43-5232-38D2-E1C6D8DC39F9"/>
+</associations>
+</Column>
+<Column name="Tarjeta_Id_tarjeta" id="B89286C7-3DD4-C660-CCBD-6631E11D8D6B">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-16 13:06:14 UTC</createdTime>
+<generatorID>9D58EA96-FCC3-F99D-E127-BDC3319C6BF9</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7F33C62E-60B6-503E-B366-829F2FEAC5D0" referredColumn="CD6F0E6E-4C51-E593-6041-35B22C3A6DCD"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7019CCE5-0251-CD77-75D8-53855E40E312" name="Cuenta_PK">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 09:32:11 UTC</createdTime>
+<generatorID>514328E4-B082-5BB6-663B-DAA4826C21C9</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="075AA717-C92E-3BE7-2A5C-606CFDDFF30E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5C3B3A0B-2724-58C6-C518-A557816ED7AA" name="Cuenta__IDX">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-16 13:06:14 UTC</createdTime>
+<ownerDesignName>Diagrama</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>3B490B60-FC1D-4257-8693-67E2A9DEC409</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="B89286C7-3DD4-C660-CCBD-6631E11D8D6B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EE9B0405-9435-E48D-05AF-8746CD5B5DDF" name="Cuenta_Cliente_FK">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 09:32:31 UTC</createdTime>
+<generatorID>F0B8D9EC-A348-5ECD-8C3C-0E19230D264A</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FEF3425D-2DCC-6EF2-3013-97DB55CCEF17"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FBFB5F12-6457-2C26-AD55-2C26340B8355" name="Cuenta_Tarjeta_FK">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-16 13:06:14 UTC</createdTime>
+<generatorID>3B490B60-FC1D-4257-8693-67E2A9DEC409</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B89286C7-3DD4-C660-CCBD-6631E11D8D6B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

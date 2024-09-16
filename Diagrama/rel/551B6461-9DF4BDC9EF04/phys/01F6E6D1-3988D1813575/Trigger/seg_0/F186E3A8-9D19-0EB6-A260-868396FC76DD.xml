@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="INCUSR" directorySegmentName="seg_0" id="F186E3A8-9D19-0EB6-A260-868396FC76DD">
+<sourceConnName>Proyecto1</sourceConnName>
+<sourceObjSchema>C##JEFF</sourceObjSchema>
+<sourceObjName>INCUSR</sourceObjName>
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 01:41:42 UTC</createdTime>
+<ownerDesignName>Diagrama</ownerDesignName>
+<actions>INSERT</actions>
+<body><![CDATA[BEGIN
+    :NEW.Id := incUsr.NEXTVAL;
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>4577CB32-A4A3-FDCB-810A-18863E5EB81D</owner>
+<table>42426B1E-3D50-A97E-C427-C19627227064</table>
+</TriggerOraclev10g>

@@ -1,0 +1,183 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A908372B-A9A7-C023-4F47-6719038FB302" name="Tarjeta">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 10:38:30 UTC</createdTime>
+<generatorID>130649BF-34CC-E3A1-4E39-C2A553B74938</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_tarjeta" id="CD6F0E6E-4C51-E593-6041-35B22C3A6DCD">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 10:38:30 UTC</createdTime>
+<generatorID>45818266-5EBA-0141-602D-0013FD7D7EAB</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="No_tarjeta" id="307604A7-A6AE-8CDD-E10B-27BF507F0F9B">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 10:38:30 UTC</createdTime>
+<generatorID>F5702253-1429-D0C9-46AF-6B4010806969</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Limite_credito" id="B04DB4A8-A48C-C7E4-F558-CD524EFB798D">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 10:38:30 UTC</createdTime>
+<generatorID>0E10AFA0-EFB1-3D0A-D261-79BABF94ED9B</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Saldo_actual" id="24BB6357-9CFA-BCBC-F94D-1D7F9C0FC41E">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 10:38:30 UTC</createdTime>
+<generatorID>22451E66-71D7-C0DE-4073-83868C556143</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha_emision" id="A7B46EC6-1F94-7461-1A0A-C80136EF1E80">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 10:38:30 UTC</createdTime>
+<generatorID>B8A3471B-8630-2BB7-816B-E0F1308BDEC8</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha_expiracion" id="7A359F59-D8AE-4ABF-3E78-8F8F52016B2E">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 10:38:30 UTC</createdTime>
+<generatorID>F809C69A-2CAF-0E69-1D49-1F39C52903E1</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Estado" id="3898ECE5-670A-9F98-AE15-9FFF6C531A8D">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 10:38:30 UTC</createdTime>
+<generatorID>7C4A1684-E7F5-0D6B-ED80-661F49918491</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha_corte" id="F7760221-99F9-00BA-77CC-3ED64CEE15DE">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 10:38:30 UTC</createdTime>
+<generatorID>C11B759F-EAD6-41AE-C4A9-1616BECA0A0E</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dia_ciclo" id="05035CE5-5512-D7B4-6A87-46FE3B2E6833">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 10:38:30 UTC</createdTime>
+<generatorID>3A087EBE-F8A5-6402-A2A3-5718075F8766</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cliente_Id_cliente" id="EC0F2515-E427-81B7-F7B4-E6C484DFE614">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 10:38:30 UTC</createdTime>
+<generatorID>97FD1167-7EBC-D22A-6FC6-62291B99817F</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="712DCDAE-5D3D-6A15-7ED1-846012F3063A" referredColumn="55F34C68-7E43-5232-38D2-E1C6D8DC39F9"/>
+</associations>
+</Column>
+<Column name="Empleado_Id_empleado" id="F4C32EE6-9595-776F-C6F3-3200FF61C0C0">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-16 13:06:14 UTC</createdTime>
+<generatorID>A419C694-6970-A0F0-50E1-49034B27A9C8</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6E80AF4E-3E7C-4CA9-0EC0-A7BAF64AD41A" referredColumn="2636D2CB-07AC-A49D-54F3-280CC78E4619"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7A18C623-C2DF-1992-B0A7-350F98C3EE86" name="Tarjeta_PK">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 10:38:30 UTC</createdTime>
+<generatorID>F8C4DB9D-26DC-AE08-D1B7-B38568FB5F5A</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CD6F0E6E-4C51-E593-6041-35B22C3A6DCD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="37EED22B-C029-C1E6-08FB-F42567FD6CCD" name="Tarjeta_Cliente_FK">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 10:38:30 UTC</createdTime>
+<generatorID>0BD86444-5040-EB41-3B05-84458C7E801F</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EC0F2515-E427-81B7-F7B4-E6C484DFE614"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="850247CC-A7A0-1B92-CFF3-0FCF9DFE853C" name="Tarjeta_Empleado_FK">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-16 13:06:14 UTC</createdTime>
+<generatorID>13417259-B79C-9DF2-93ED-04CB1A949916</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F4C32EE6-9595-776F-C6F3-3200FF61C0C0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="752E528E-1CD5-0C4B-B44F-A8E735AA3A38" name="Cliente">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 09:29:00 UTC</createdTime>
+<generatorID>8911E14F-E153-1710-39F9-5D702D185D80</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Nombre" id="B020A3FC-81D1-E413-364D-F80B6136C8AC">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 09:29:00 UTC</createdTime>
+<generatorID>C4D2169A-075F-A804-D954-86358F9E55FD</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Apellido" id="E1CD5396-C5F4-AABF-8FF6-9E499CDA25E3">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 09:29:00 UTC</createdTime>
+<generatorID>B0041F5E-6224-B472-24D8-C1F7BBF9BE1F</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Telefono" id="051F2BD0-1DBD-57EE-8448-C0FC1DC97DC7">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 09:29:00 UTC</createdTime>
+<generatorID>37A40DFB-1AF2-943C-B767-EB1CA8EC67D6</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Id_cliente" id="55F34C68-7E43-5232-38D2-E1C6D8DC39F9">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 09:32:11 UTC</createdTime>
+<generatorID>1045C7B0-12F1-40A3-1331-E6C5F520BE7C</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1D2FCDAF-69C7-5333-F9BC-0DF29930BA92" name="Cliente_PK">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 09:32:11 UTC</createdTime>
+<generatorID>CC84170F-A2E5-E8DE-1864-D5861CE3DA88</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="55F34C68-7E43-5232-38D2-E1C6D8DC39F9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

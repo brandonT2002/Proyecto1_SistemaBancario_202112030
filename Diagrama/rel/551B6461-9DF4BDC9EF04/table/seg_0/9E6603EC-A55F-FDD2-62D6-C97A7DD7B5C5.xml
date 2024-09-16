@@ -1,0 +1,161 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9E6603EC-A55F-FDD2-62D6-C97A7DD7B5C5" name="Empleado">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 09:29:00 UTC</createdTime>
+<generatorID>6C7B3D1F-FA54-C8C5-554D-DA8431DEF1D3</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_empleado" id="2636D2CB-07AC-A49D-54F3-280CC78E4619">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 10:11:15 UTC</createdTime>
+<generatorID>1A36936D-4181-5B1B-1909-2CD125582D07</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="846D3CD2-D556-A5DE-1DCF-8597E64B9F18">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 10:11:15 UTC</createdTime>
+<generatorID>89F10E73-1D87-6B87-F5C7-28CA7F1296C9</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35</dataTypeSize>
+<ownDataTypeParameters>35,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Apellido" id="3E80B47D-E85C-BED5-0441-FB1D461B9C8F">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 10:11:15 UTC</createdTime>
+<generatorID>E82F5891-7195-0C11-DDE3-9424B1E9F658</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35</dataTypeSize>
+<ownDataTypeParameters>35,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Rol" id="0BB5849A-393D-3F47-D11E-AC7E1D211700">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 10:11:15 UTC</createdTime>
+<generatorID>0E3FDB47-B615-7F13-B763-772FF50C8F80</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Departamento" id="9B005DE6-69AA-E104-D7C4-86A0430B74B1">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 10:11:15 UTC</createdTime>
+<generatorID>9C8F0026-E6E0-259B-DF90-C5C427592C51</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Agrencia_sucursal" id="E7280E69-3A97-45EA-8EA1-BBAFD1A47C33">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 10:11:15 UTC</createdTime>
+<generatorID>5AED5488-5B93-306F-7A75-FF93098B1E1B</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35</dataTypeSize>
+<ownDataTypeParameters>35,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Telefono" id="86BCEDFB-A0A1-DF26-E32D-BFC687BC684D">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 10:11:15 UTC</createdTime>
+<generatorID>8710CC6A-1DA7-D22E-9B7B-BCF925E2B332</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Agencia_sucursal_Id_agencia" id="48A3C529-7B28-FDEC-E3AE-7B91781C6964">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 10:11:15 UTC</createdTime>
+<generatorID>6DEBA337-69F1-04D3-B738-1498266AF37C</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="35F63127-F0CB-C777-4CCC-3D2374CA791C" referredColumn="2275BC56-790A-32FE-3BE9-C5A8937A1F37"/>
+</associations>
+</Column>
+<Column name="Rol_Id_rol" id="2E4C8FDC-0A4B-1EDE-62F6-D48035538BCD">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-16 13:06:14 UTC</createdTime>
+<generatorID>C5DFD1BF-2290-015D-5750-7E1C3E602F2A</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6C07A0AB-AD7E-0425-9F1B-3277DEDE937B" referredColumn="F7FC239A-1C78-5371-9B19-5E91587F35DC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="00196616-4AF5-9162-C787-091F1CA514E8" name="Empleado_PK">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 10:11:15 UTC</createdTime>
+<generatorID>6BF0A7AD-51A7-E6FA-E549-A6EA00E4362C</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2636D2CB-07AC-A49D-54F3-280CC78E4619"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="86ABC155-4F94-FE20-C6AE-FA0BF59161F8" name="Empleado_Agencia_sucursal_FK">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 10:11:15 UTC</createdTime>
+<generatorID>C36F481D-3A78-2E73-D388-E234A324C9BC</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="48A3C529-7B28-FDEC-E3AE-7B91781C6964"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F025F437-13DD-4A51-E36C-C319D517A9D9" name="Empleado_Rol_FK">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-16 13:06:14 UTC</createdTime>
+<generatorID>D7A7496C-2096-4CEC-BFD4-8D2983A667DB</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2E4C8FDC-0A4B-1EDE-62F6-D48035538BCD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

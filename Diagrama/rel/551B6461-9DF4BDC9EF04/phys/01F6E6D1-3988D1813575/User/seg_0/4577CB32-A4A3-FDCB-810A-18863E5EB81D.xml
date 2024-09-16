@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="C##JEFF" directorySegmentName="seg_0" id="4577CB32-A4A3-FDCB-810A-18863E5EB81D">
+<sourceConnName>Proyecto1</sourceConnName>
+<sourceObjName>C##JEFF</sourceObjName>
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 01:41:39 UTC</createdTime>
+<ownerDesignName>Diagrama</ownerDesignName>
+<schemaObject>F57E98D7-CCCB-891A-2938-0B048431A11D</schemaObject>
+</UserOraclev10g>

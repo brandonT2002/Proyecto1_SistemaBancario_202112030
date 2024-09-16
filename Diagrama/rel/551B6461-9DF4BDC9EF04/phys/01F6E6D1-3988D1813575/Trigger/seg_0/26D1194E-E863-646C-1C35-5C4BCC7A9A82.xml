@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="INCCTA" directorySegmentName="seg_0" id="26D1194E-E863-646C-1C35-5C4BCC7A9A82">
+<sourceConnName>Proyecto1</sourceConnName>
+<sourceObjSchema>C##JEFF</sourceObjSchema>
+<sourceObjName>INCCTA</sourceObjName>
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-15 01:41:42 UTC</createdTime>
+<ownerDesignName>Diagrama</ownerDesignName>
+<actions>INSERT</actions>
+<body><![CDATA[BEGIN
+    :NEW.Id := incCta.NEXTVAL;
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>4577CB32-A4A3-FDCB-810A-18863E5EB81D</owner>
+<table>9C378FC7-3F86-37A6-1842-66DC7DD9D4E6</table>
+</TriggerOraclev10g>
