@@ -2,6 +2,7 @@
 
 > Brandon Tejaxún - 202112030
 
+## 🔧 Herramientas:
 <div align="center" style="display:flex;justify-content:center;gap:20px">
  <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=git" />
@@ -47,39 +48,6 @@
 6. Empleados
     * 11k empleados
 
-## **Requisitos Funcionales**
-
-1. Registro de Usuarios
-
-2. Procesamiento de Pagos
-    * Tarjetas
-        * Crédito
-        * Débito
-    * Transferencias
-
-3. Historial de Transacciones
-
-4. Autenticación y autorización de usuarios
-
-5.  Gestión de Cuentas
-    * Crear
-    * Actualizar
-        * Datos personales
-        * Retiros/Transferencias
-    * Consultar
-
-6. Procesamiento de Préstamos
-    * Solicitudes de préstamos
-    * Pagos
-    * Registro de balances
-
-7. Gestión de Tarjetas
-    * Registro
-    * Administración
-    * Emisión
-    * Pagos de saldo
-    * Generación de estados de cuenta
-
 ## **Casos de Uso**
 
 1. Cliente
@@ -115,66 +83,168 @@
     * Gestionar los reportes de rendimiento y las estadísticas del banco
     * Gestionar la seguridad del sistema y los accesos
 
-## **Entidades**
+## **Esquema de Base de Datos**
 
-| Cliente   |
-| -         |
-| Nombre    |
-| Apellido  |
-| Dirección |
-| Teléfono  |
+### Secuencias
 
-<br>
+Esta secuencia `incRol` se utiliza para generar los valores del campo `Id_rol` en la tabla `ROL`. De igual forma, otras tablas también tienen sus propias secuencias como `incClt`, `incAgs`, `incCta`, etc.
 
-| Cuenta    |
-| -         |
-| No Cuenta |
-| Tipo      |
-| Saldo     |
+```sql
+CREATE SEQUENCE incRol START WITH 1 INCREMENT BY 1;
+```
 
-<br>
+### Tabla CLIENTE
 
-| Transaccion |
-| -           |
-| Tipo        |
-| Monto       |
-| Fecha       |
-| Descripcion |
+```sql
+CREATE TABLE CLIENTE (
+    Id_cliente  NUMBER       NOT NULL PRIMARY KEY,
+    Nombre      VARCHAR2(20) NOT NULL,
+    Apellido    VARCHAR2(20) NOT NULL,
+    Telefono    VARCHAR2(15) NOT NULL
+);
+```
 
-<br>
+Relación: `Id_cliente` es utilizado como clave foránea en varias tablas, como `CUENTA`, `TARJETA`, `PRESTAMO`, y `TRANSACCION`, lo que indica que un cliente puede tener cuentas, tarjetas, préstamos y participar en transacciones.
 
-| Préstamos   |
-| -           |
-| Estado      |
-| Monto       |
-| Interes     |
-| Fecha       |
+### Tabla AGENCIA_SUCURSAL
 
-<br>
+```sql
+CREATE TABLE AGENCIA_SUCURSAL (
+    Id_agencia           NUMBER       NOT NULL PRIMARY KEY,
+    Nombre               VARCHAR2(35) NOT NULL,
+    Tipo                 VARCHAR2(10) NOT NULL,
+    Departamento         VARCHAR2(20) NOT NULL,
+    Municipio            VARCHAR2(20) NOT NULL,
+    Direccion            VARCHAR2(20) NOT NULL,
+    Codigo_postal        VARCHAR2(5)  NOT NULL,
+    Telefono             VARCHAR2(15) NOT NULL
+);
+```
 
-| Tarjeta        |
-| -              |
-| No. Tarjeta    |
-| Tipo           |
-| Saldo          |
-| F. emisión     |
-| F. vencimiento |
+Relación: `Id_agencia` es una clave foránea en las tablas `EMPLEADO` y `TRANSACCION`, lo que implica que tanto los empleados como las transacciones están vinculados a una agencia específica.
 
-<br>
+### Tabla CUENTA
 
-| Empleado       |
-| -              |
-| Nombre         |
-| Apellido       |
-| Rol            |
+```sql
+CREATE TABLE CUENTA (
+    Id_cuenta           NUMBER       NOT NULL PRIMARY KEY,
+    No_cuenta           VARCHAR2(20) NOT NULL UNIQUE,
+    Tipo                VARCHAR2(20) NOT NULL,
+    Saldo               NUMBER(20)   NOT NULL,
+    Cliente_id_cliente  NUMBER       NOT NULL,
+    CONSTRAINT Fk_Cuenta_Cliente
+        FOREIGN KEY (Cliente_id_cliente)
+        REFERENCES CLIENTE(Id_cliente)
+);
+```
 
-<br>
+Relación: La relación principal es con la tabla `CLIENTE`, ya que cada cuenta pertenece a un cliente específico.
+También se relaciona indirectamente con `TRANSACCION`, ya que las transacciones pueden afectar a las cuentas bancarias.
 
-| Sucursal_Agencia |
-| -                |
-| Nombre           |
-| Municipio        |
-| Departamento     |
+### Tabla EMPLEADO
+
+```sql
+CREATE TABLE EMPLEADO (
+    Id_empleado  NUMBER       NOT NULL PRIMARY KEY,
+    Nombre       VARCHAR2(20) NOT NULL,
+    Apellido     VARCHAR2(20) NOT NULL,
+    Rol          VARCHAR2(20) NOT NULL,
+    Telefono     VARCHAR2(15) NOT NULL,
+    Id_agencia   NUMBER       NOT NULL,
+    Id_rol       NUMBER       NOT NULL,
+    CONSTRAINT Fk_Empleado_Agencia
+        FOREIGN KEY (Id_agencia)
+        REFERENCES AGENCIA_SUCURSAL(Id_agencia),
+    CONSTRAINT Fk_Empleado_Rol
+        FOREIGN KEY (Id_rol)
+        REFERENCES ROL(Id_rol)
+);
+```
+
+Relación: `Id_agencia` relaciona a los empleados con una sucursal.
+`Id_rol` relaciona a los empleados con un rol dentro de la empresa.
+`Id_empleado` se utiliza como clave foránea en `PRESTAMO` y `TRANSACCION`, lo que vincula a un empleado con préstamos y transacciones que han gestionado.
+
+### Tabla TARJETA
+
+```sql
+CREATE TABLE TARJETA (
+    Id_tarjeta          NUMBER       NOT NULL PRIMARY KEY,
+    No_tarjeta          VARCHAR2(20) NOT NULL UNIQUE,
+    Limite_credito      NUMBER(20)   NOT NULL,
+    Saldo_actual        NUMBER(20)   NOT NULL,
+    Fecha_vencimiento   DATE         NOT NULL,
+    Fecha_expiracion    DATE         NOT NULL,
+    Estado              VARCHAR2(10) NOT NULL,
+    Fecha_corte         DATE         NOT NULL,
+    Dia_ciclo           NUMBER       NOT NULL,
+    Id_cliente          NUMBER       NOT NULL,
+    CONSTRAINT Fk_Tarjeta_Cliente
+        FOREIGN KEY (Id_cliente)
+        REFERENCES CLIENTE(Id_cliente)
+);
+```
+
+Relación: Cada tarjeta está vinculada a un cliente mediante la clave foránea `Id_cliente`, lo que indica quién es el titular de la tarjeta.
+
+### Tabla PRESTAMO
+
+```sql
+CREATE TABLE PRESTAMO (
+    Id_prestamo         NUMBER       NOT NULL PRIMARY KEY,
+    Monto               NUMBER(20)   NOT NULL,
+    Interes             NUMBER(2,2)  NOT NULL,
+    Fecha_desembolso    DATE         NOT NULL,
+    Fecha_vencimiento   DATE         NOT NULL,
+    Saldo_pendiente     NUMBER(20)   NOT NULL,
+    Estado              VARCHAR2(10) NOT NULL,
+    Id_cliente          NUMBER       NOT NULL,
+    Id_empleado         NUMBER       NOT NULL,
+    CONSTRAINT Fk_Prestamo_Cliente
+        FOREIGN KEY (Id_cliente)
+        REFERENCES CLIENTE(Id_cliente),
+    CONSTRAINT Fk_Prestamo_Empleado
+        FOREIGN KEY (Id_empleado)
+        REFERENCES EMPLEADO(Id_empleado)
+);
+```
+
+Relación: `Id_cliente` indica el cliente que solicitó el préstamo.
+`Id_empleado` indica el empleado que gestionó el préstamo.
+
+### Tabla TRANSACCION
+
+```sql
+CREATE TABLE TRANSACCION (
+    Id_transaccion              NUMBER       NOT NULL PRIMARY KEY,
+    Tipo                        VARCHAR2(20) NOT NULL,
+    Monto                       NUMBER(20)   NOT NULL,
+    Fecha                       DATE         NOT NULL,
+    Hora                        TIMESTAMP    NOT NULL,
+    Descripcion                 VARCHAR2(35),
+    Id_cuenta                   NUMBER       NOT NULL,
+    Id_agencia                  NUMBER       NOT NULL,
+    Id_cliente                  NUMBER       NOT NULL,
+    Id_empleado                 NUMBER       NOT NULL,
+    CONSTRAINT FK_Transaccion_Cuenta
+        FOREIGN KEY (Id_cuenta)
+        REFERENCES CUENTA(Id_cuenta),
+    CONSTRAINT FK_Transaccion_Agencia
+        FOREIGN KEY (Id_agencia)
+        REFERENCES AGENCIA_SUCURSAL(Id_agencia),
+    CONSTRAINT FK_Transaccion_Cliente
+        FOREIGN KEY (Id_cliente)
+        REFERENCES CLIENTE(Id_cliente),
+    CONSTRAINT FK_Transaccion_Empleado
+        FOREIGN KEY (Id_empleado)
+        REFERENCES EMPLEADO(Id_empleado)
+);
+```
+
+Relación: `Id_cuenta` vincula la transacción con una cuenta.
+`Id_agencia` relaciona la transacción con una agencia específica.
+`Id_cliente` relaciona la transacción con un cliente.
+`Id_empleado` vincula la transacción con el empleado que la realizó.
 
 ## **Diseño Lógico y Entidad Relación**
 
