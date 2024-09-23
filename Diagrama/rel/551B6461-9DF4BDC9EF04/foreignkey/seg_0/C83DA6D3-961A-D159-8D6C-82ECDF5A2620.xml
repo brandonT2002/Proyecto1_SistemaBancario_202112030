@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C83DA6D3-961A-D159-8D6C-82ECDF5A2620" containerWithKeyObject="FE38A0DE-A80E-8114-4E6C-BF58D64DB541" localFKIndex="6A025E4D-C423-AA2C-3428-F07D8AC066B3" name="Tipo_cuenta_Cuenta_FK">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-22 20:35:46 UTC</createdTime>
+<generatorID>C6D91053-098B-E2DF-4F7D-E2F1F2827EE3</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<referredTableLongName>Cuenta</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C8AFABE5-193A-C18B-E4D3-C84C85D90CA7</referredTableID>
+<keyObject>0CFF4989-7F94-743A-BF2D-87A1B35D2BB0</keyObject>
+<referredKeyID>0CFF4989-7F94-743A-BF2D-87A1B35D2BB0</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id_cuenta</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

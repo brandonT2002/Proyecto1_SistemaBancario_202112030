@@ -150,6 +150,34 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="Id_tarjeta" id="83298B5B-9B36-54FC-A757-6E89117349E9">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-16 21:56:02 UTC</createdTime>
+<generatorID>A0F8CD40-2164-417C-71E9-FD40E4B8CB8A</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<engineerTo>
+<item key="551B6461-CA27-D845-6439-9DF4BDC9EF04" value="true"/>
+</engineerTo>
+<referedAttribute>45818266-5EBA-0141-602D-0013FD7D7EAB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_ubicacion" id="559F99F3-153A-8E93-B735-495D45F8FEB7">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-22 20:14:02 UTC</createdTime>
+<generatorID>1BB77B4E-3818-91CE-404B-FD161FB8035C</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<engineerTo>
+<item key="551B6461-CA27-D845-6439-9DF4BDC9EF04" value="true"/>
+</engineerTo>
+<referedAttribute>4F249913-AD0F-3B23-767E-7EF7350BAA89</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="AC012351-848C-10AA-C9B6-4C6F48DD6DB0" name="Transaccion PK">

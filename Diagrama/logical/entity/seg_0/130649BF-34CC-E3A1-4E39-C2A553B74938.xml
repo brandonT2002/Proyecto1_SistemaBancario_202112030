@@ -157,14 +157,29 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="Id_cuenta" id="FFD5185C-0953-CA90-287D-22E455CDD905">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-16 21:45:57 UTC</createdTime>
+<generatorID>55DBA4CB-71C2-5B81-3497-FDD2156C976D</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<engineerTo>
+<item key="551B6461-CA27-D845-6439-9DF4BDC9EF04" value="true"/>
+</engineerTo>
+<referedAttribute>302EEF67-7360-4942-0C14-A0B9D76FC8F3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="F8C4DB9D-26DC-AE08-D1B7-B38568FB5F5A" name="Tarjeta PK">
 <createdBy>Jefferson</createdBy>
 <createdTime>2024-09-15 10:29:59 UTC</createdTime>
 <ownerDesignName>Diagrama</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="551B6461-CA27-D845-6439-9DF4BDC9EF04" value="true"/>
+<item key="551B6461-CA27-D845-6439-9DF4BDC9EF04" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

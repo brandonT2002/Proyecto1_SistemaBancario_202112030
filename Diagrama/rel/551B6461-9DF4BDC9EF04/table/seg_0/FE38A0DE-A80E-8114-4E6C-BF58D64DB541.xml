@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FE38A0DE-A80E-8114-4E6C-BF58D64DB541" name="Tipo_cuenta">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-22 20:35:46 UTC</createdTime>
+<generatorID>FE67EDD7-3ECE-3A53-BE3C-476E26272948</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_tipo_cuenta" id="529040BF-FED0-F7FD-18A5-A20D333E3EA3">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-22 20:35:46 UTC</createdTime>
+<generatorID>0E0B6D45-B8F1-BF47-C717-92760D75DB9E</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tipo" id="CE3BE3BD-AC73-1DC0-56D2-0AA4F349CE00">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-22 20:35:46 UTC</createdTime>
+<generatorID>FD1F1126-1FB1-EC60-1476-CAE6F3763FEF</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cuenta_Id_cuenta" id="689A6841-8C2F-0A78-2565-1EFC495A7A75">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-22 20:35:46 UTC</createdTime>
+<generatorID>05EDE606-44BE-9DF5-4A14-E32D46CE569C</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C83DA6D3-961A-D159-8D6C-82ECDF5A2620" referredColumn="9B7AC140-D3E6-DC53-EE71-A93CB6325A72"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="33DE2C1C-091B-1012-074F-A0A460431C4B" name="Tipo_cuenta_PK">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-22 20:35:46 UTC</createdTime>
+<generatorID>F496DA82-418D-8505-2826-5ABC135F53D3</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="529040BF-FED0-F7FD-18A5-A20D333E3EA3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2648475E-37E7-5CF8-C1E6-D8B9EFD7FAE1" name="Tipo_cuenta__IDX">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-22 20:35:46 UTC</createdTime>
+<ownerDesignName>Diagrama</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>C6D91053-098B-E2DF-4F7D-E2F1F2827EE3</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="689A6841-8C2F-0A78-2565-1EFC495A7A75"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6A025E4D-C423-AA2C-3428-F07D8AC066B3" name="Tipo_cuenta_Cuenta_FK">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-22 20:35:46 UTC</createdTime>
+<generatorID>C6D91053-098B-E2DF-4F7D-E2F1F2827EE3</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="689A6841-8C2F-0A78-2565-1EFC495A7A75"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

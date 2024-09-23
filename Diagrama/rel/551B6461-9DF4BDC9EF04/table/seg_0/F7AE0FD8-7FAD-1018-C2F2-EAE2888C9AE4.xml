@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A908372B-A9A7-C023-4F47-6719038FB302" name="Tarjeta">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F7AE0FD8-7FAD-1018-C2F2-EAE2888C9AE4" name="Tarjeta">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-15 10:38:30 UTC</createdTime>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <generatorID>130649BF-34CC-E3A1-4E39-C2A553B74938</generatorID>
 <ownerDesignName>Diagrama</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="Id_tarjeta" id="CD6F0E6E-4C51-E593-6041-35B22C3A6DCD">
+<Column name="Id_tarjeta" id="EFD79F53-3AD7-1E77-F2C3-55990F24197F">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-15 10:38:30 UTC</createdTime>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <generatorID>45818266-5EBA-0141-602D-0013FD7D7EAB</generatorID>
 <ownerDesignName>Diagrama</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -19,9 +19,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="No_tarjeta" id="307604A7-A6AE-8CDD-E10B-27BF507F0F9B">
+<Column name="No_tarjeta" id="2A2E79B5-CF8B-3DF9-E2C3-4496822DE7FE">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-15 10:38:30 UTC</createdTime>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <generatorID>F5702253-1429-D0C9-46AF-6B4010806969</generatorID>
 <ownerDesignName>Diagrama</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -31,9 +31,9 @@
 <ownDataTypeParameters>16,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Limite_credito" id="B04DB4A8-A48C-C7E4-F558-CD524EFB798D">
+<Column name="Limite_credito" id="23E48C8D-2E58-F0EC-17C0-C370A2E5F4C8">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-15 10:38:30 UTC</createdTime>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <generatorID>0E10AFA0-EFB1-3D0A-D261-79BABF94ED9B</generatorID>
 <ownerDesignName>Diagrama</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -43,9 +43,9 @@
 <ownDataTypeParameters>,20,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Saldo_actual" id="24BB6357-9CFA-BCBC-F94D-1D7F9C0FC41E">
+<Column name="Saldo_actual" id="F8A71989-941A-317B-8F2B-F17A204BFAEF">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-15 10:38:30 UTC</createdTime>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <generatorID>22451E66-71D7-C0DE-4073-83868C556143</generatorID>
 <ownerDesignName>Diagrama</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -55,9 +55,9 @@
 <ownDataTypeParameters>,20,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Fecha_emision" id="A7B46EC6-1F94-7461-1A0A-C80136EF1E80">
+<Column name="Fecha_emision" id="361302C1-EF97-94C2-21D4-2724521543F8">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-15 10:38:30 UTC</createdTime>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <generatorID>B8A3471B-8630-2BB7-816B-E0F1308BDEC8</generatorID>
 <ownerDesignName>Diagrama</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -66,9 +66,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Fecha_expiracion" id="7A359F59-D8AE-4ABF-3E78-8F8F52016B2E">
+<Column name="Fecha_expiracion" id="E859BA94-613C-3F82-DDFA-B10257B47893">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-15 10:38:30 UTC</createdTime>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <generatorID>F809C69A-2CAF-0E69-1D49-1F39C52903E1</generatorID>
 <ownerDesignName>Diagrama</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -77,9 +77,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Estado" id="3898ECE5-670A-9F98-AE15-9FFF6C531A8D">
+<Column name="Estado" id="F422C74D-6691-6773-97CD-B948953BEB9A">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-15 10:38:30 UTC</createdTime>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <generatorID>7C4A1684-E7F5-0D6B-ED80-661F49918491</generatorID>
 <ownerDesignName>Diagrama</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -89,9 +89,9 @@
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Fecha_corte" id="F7760221-99F9-00BA-77CC-3ED64CEE15DE">
+<Column name="Fecha_corte" id="A7CD4D50-21C4-D5DB-F123-4ABF7DC8DFAA">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-15 10:38:30 UTC</createdTime>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <generatorID>C11B759F-EAD6-41AE-C4A9-1616BECA0A0E</generatorID>
 <ownerDesignName>Diagrama</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -100,9 +100,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Dia_ciclo" id="05035CE5-5512-D7B4-6A87-46FE3B2E6833">
+<Column name="Dia_ciclo" id="04AE351C-CD08-A6BF-258F-103596533F70">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-15 10:38:30 UTC</createdTime>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <generatorID>3A087EBE-F8A5-6402-A2A3-5718075F8766</generatorID>
 <ownerDesignName>Diagrama</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -112,9 +112,9 @@
 <ownDataTypeParameters>,2,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Cliente_Id_cliente" id="EC0F2515-E427-81B7-F7B4-E6C484DFE614">
+<Column name="Cliente_Id_cliente" id="4828B435-06B7-14EE-6A29-93A8A7841CC8">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-15 10:38:30 UTC</createdTime>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <generatorID>97FD1167-7EBC-D22A-6FC6-62291B99817F</generatorID>
 <ownerDesignName>Diagrama</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -125,12 +125,12 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="712DCDAE-5D3D-6A15-7ED1-846012F3063A" referredColumn="55F34C68-7E43-5232-38D2-E1C6D8DC39F9"/>
+<colAssociation fkAssociation="0E4DD993-C873-6FAD-201F-0DC56724F486" referredColumn="0E89D18E-BB29-4C5B-A15C-2841D1941BF0"/>
 </associations>
 </Column>
-<Column name="Empleado_Id_empleado" id="F4C32EE6-9595-776F-C6F3-3200FF61C0C0">
+<Column name="Empleado_Id_empleado" id="669CF20A-CEA1-525F-7A81-A3A0414D7E45">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-16 13:06:14 UTC</createdTime>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <generatorID>A419C694-6970-A0F0-50E1-49034B27A9C8</generatorID>
 <ownerDesignName>Diagrama</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -140,43 +140,80 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="6E80AF4E-3E7C-4CA9-0EC0-A7BAF64AD41A" referredColumn="2636D2CB-07AC-A49D-54F3-280CC78E4619"/>
+<colAssociation fkAssociation="361762FC-072B-BF71-2161-5992554B1BFC" referredColumn="3B4E33EC-B1E8-82F4-5C9A-1D3819EF45B5"/>
+</associations>
+</Column>
+<Column name="Cuenta_Id_cuenta" id="D71816C3-A543-26B3-214A-A5EFB15DF733">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
+<generatorID>FFD5185C-0953-CA90-287D-22E455CDD905</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5FB698F5-3A4D-018B-ED94-68C528B7291D" referredColumn="9B7AC140-D3E6-DC53-EE71-A93CB6325A72"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="7A18C623-C2DF-1992-B0A7-350F98C3EE86" name="Tarjeta_PK">
+<ind_PK_UK id="5079D3FC-AF45-B375-E816-8983902C7B32" name="Tarjeta_PK">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-15 10:38:30 UTC</createdTime>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <generatorID>F8C4DB9D-26DC-AE08-D1B7-B38568FB5F5A</generatorID>
 <ownerDesignName>Diagrama</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="CD6F0E6E-4C51-E593-6041-35B22C3A6DCD"/>
+<colUsage columnID="EFD79F53-3AD7-1E77-F2C3-55990F24197F"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="37EED22B-C029-C1E6-08FB-F42567FD6CCD" name="Tarjeta_Cliente_FK">
+<ind_PK_UK id="9B0EB0B7-CFA0-FFDA-2E4C-B66529950B5F" name="Tarjeta__IDX">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-15 10:38:30 UTC</createdTime>
-<generatorID>0BD86444-5040-EB41-3B05-84458C7E801F</generatorID>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <ownerDesignName>Diagrama</ownerDesignName>
-<indexState>Foreign Key</indexState>
+<indexState>Unique Plain Index</indexState>
 <isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>55DBA4CB-71C2-5B81-3497-FDD2156C976D</relationGeneratorID>
 <indexColumnUsage>
-<colUsage columnID="EC0F2515-E427-81B7-F7B4-E6C484DFE614"/>
+<colUsage columnID="D71816C3-A543-26B3-214A-A5EFB15DF733"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="850247CC-A7A0-1B92-CFF3-0FCF9DFE853C" name="Tarjeta_Empleado_FK">
+<ind_PK_UK id="3927DDA0-2981-D273-52D5-140ED0DBE356" name="Tarjeta_Empleado_FK">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-16 13:06:14 UTC</createdTime>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <generatorID>13417259-B79C-9DF2-93ED-04CB1A949916</generatorID>
 <ownerDesignName>Diagrama</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="F4C32EE6-9595-776F-C6F3-3200FF61C0C0"/>
+<colUsage columnID="669CF20A-CEA1-525F-7A81-A3A0414D7E45"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2BD6BBC2-98C3-4D23-CF1E-6092C5CBB284" name="Tarjeta_Cliente_FK">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
+<generatorID>0BD86444-5040-EB41-3B05-84458C7E801F</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4828B435-06B7-14EE-6A29-93A8A7841CC8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5417F31D-4C0E-7ABB-3E93-1514D3D63B59" name="Tarjeta_Cuenta_FK">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
+<generatorID>55DBA4CB-71C2-5B81-3497-FDD2156C976D</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D71816C3-A543-26B3-214A-A5EFB15DF733"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

@@ -133,6 +133,20 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="Id_ubicacion" id="98862DF6-CBBF-EDEE-FCDE-1BE98EB6CE49">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-22 20:14:02 UTC</createdTime>
+<generatorID>C36F481D-3A78-2E73-D388-E234A324C9BC</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<engineerTo>
+<item key="551B6461-CA27-D845-6439-9DF4BDC9EF04" value="true"/>
+</engineerTo>
+<referedAttribute>4F249913-AD0F-3B23-767E-7EF7350BAA89</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="6BF0A7AD-51A7-E6FA-E549-A6EA00E4362C" name="Empleado PK">

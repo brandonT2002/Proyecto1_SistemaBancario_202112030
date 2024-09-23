@@ -53,22 +53,9 @@
 <dataTypeSize>10</dataTypeSize>
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Departamento" id="435ACE0D-0B3C-3781-2D70-88FCBC63C6B0">
+<Attribute name="Ubicacion" id="98372696-E255-097F-FD2C-A1BE09F67005">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-15 09:56:27 UTC</createdTime>
-<ownerDesignName>Diagrama</ownerDesignName>
-<engineerTo>
-<item key="551B6461-CA27-D845-6439-9DF4BDC9EF04" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>20</dataTypeSize>
-<ownDataTypeParameters>20,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Municipio" id="B6464CDE-5911-AC1B-D1F1-9C21858D73B5">
-<createdBy>Jefferson</createdBy>
-<createdTime>2024-09-15 09:57:12 UTC</createdTime>
+<createdTime>2024-09-22 20:14:51 UTC</createdTime>
 <ownerDesignName>Diagrama</ownerDesignName>
 <engineerTo>
 <item key="551B6461-CA27-D845-6439-9DF4BDC9EF04" value="true"/>
@@ -118,6 +105,20 @@
 <dataTypeSize>15</dataTypeSize>
 <ownDataTypeParameters>15,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="Id_ubicacion" id="4F249913-AD0F-3B23-767E-7EF7350BAA89">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-22 20:14:02 UTC</createdTime>
+<generatorID>08ED5004-3D5D-D786-60C5-63ED3B613DE3</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<engineerTo>
+<item key="551B6461-CA27-D845-6439-9DF4BDC9EF04" value="true"/>
+</engineerTo>
+<referedAttribute>77664C27-7DFB-CC23-A755-A49A1FD29516</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="2E4B16D9-703B-445C-8BE7-3A718045B7CB" name="Agencia_sucursal PK">
@@ -131,6 +132,7 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>56489D09-58EE-35C9-1C88-183DCE9FC3DD</attributeRef>
+<attributeRef>4F249913-AD0F-3B23-767E-7EF7350BAA89</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="720D1552-7DE4-D9ED-176A-17709F25DB95" name="Agencia_sucursal">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1EDA607B-1860-5BB0-EC7F-9C426E800106" name="Agencia_sucursal">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-15 09:29:00 UTC</createdTime>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <generatorID>5A4FF034-042C-B2F1-DBC8-F7F70B2F0FEA</generatorID>
 <ownerDesignName>Diagrama</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="Id_agencia" id="2275BC56-790A-32FE-3BE9-C5A8937A1F37">
+<Column name="Id_agencia" id="667D93F9-C358-1F4C-496A-51E7BA85EFE4">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-15 10:01:13 UTC</createdTime>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <generatorID>56489D09-58EE-35C9-1C88-183DCE9FC3DD</generatorID>
 <ownerDesignName>Diagrama</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -19,9 +19,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Nombre" id="A34255B0-AC8A-541A-67DC-A78BB9F0EF5A">
+<Column name="Nombre" id="58D72A34-8195-6534-CFD8-F02C34EE4C54">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-15 10:01:13 UTC</createdTime>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <generatorID>25C08E89-316B-8296-11C3-1ED8AF0FF754</generatorID>
 <ownerDesignName>Diagrama</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -31,9 +31,9 @@
 <ownDataTypeParameters>35,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Tipo" id="6777CEBF-F74A-02B0-C7FE-468BF0BB4D9A">
+<Column name="Tipo" id="11EBEFFA-AAF9-5027-569E-D88F7D78E9AE">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-15 10:01:13 UTC</createdTime>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <generatorID>8E419D94-FD62-4F19-A1D8-D8C33BAA5E3F</generatorID>
 <ownerDesignName>Diagrama</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -43,9 +43,9 @@
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Departamento" id="2D385CBB-6126-37DA-293C-AAEAC1275AE9">
+<Column name="Departamento" id="42984C19-F68A-32B7-E9EB-3DB2C8C6DC0B">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-15 10:01:13 UTC</createdTime>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <generatorID>435ACE0D-0B3C-3781-2D70-88FCBC63C6B0</generatorID>
 <ownerDesignName>Diagrama</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -55,9 +55,9 @@
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Municipio" id="E50B21B0-AD51-CDF6-2D96-57478DD804A9">
+<Column name="Municipio" id="0B08E8E4-D0CA-21AF-B53B-8822A986AB62">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-15 10:01:13 UTC</createdTime>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <generatorID>B6464CDE-5911-AC1B-D1F1-9C21858D73B5</generatorID>
 <ownerDesignName>Diagrama</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -67,9 +67,9 @@
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Direccion" id="C2DD8E5C-B1D0-98C3-7205-FA73F2E9A833">
+<Column name="Direccion" id="D5F42F97-0ACC-ACC3-14A3-801DA139904B">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-15 10:01:13 UTC</createdTime>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <generatorID>33FC8D69-4535-133C-0D5F-D4995AA742E1</generatorID>
 <ownerDesignName>Diagrama</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -79,9 +79,9 @@
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Codigo_postal" id="D943CE7A-E561-86C8-529F-A9F998F8656B">
+<Column name="Codigo_postal" id="5AE772FF-327E-B559-B1A2-E24CDA07DE5A">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-15 10:01:13 UTC</createdTime>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <generatorID>CB32F134-DE79-67AB-AC7E-F9222B8F4E7D</generatorID>
 <ownerDesignName>Diagrama</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -91,9 +91,9 @@
 <ownDataTypeParameters>5,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Telefono" id="AC36D144-6045-1AE7-90E1-B0DD9B374B9F">
+<Column name="Telefono" id="0ABEF8E7-078A-B0D2-896B-92C666E43938">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-15 10:01:13 UTC</createdTime>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <generatorID>26549CCF-F18C-712C-1958-B77999E38A28</generatorID>
 <ownerDesignName>Diagrama</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -103,18 +103,56 @@
 <ownDataTypeParameters>15,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="Ubicacion" id="9832C393-AF79-6750-54BC-EF074A134708">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-22 20:35:46 UTC</createdTime>
+<generatorID>98372696-E255-097F-FD2C-A1BE09F67005</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Ubucacion_Id_ubicacion" id="EA99CA2D-60ED-C565-1942-4C0402A110DB">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-22 20:35:46 UTC</createdTime>
+<generatorID>4F249913-AD0F-3B23-767E-7EF7350BAA89</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4D731104-6DF9-B489-7F5D-292A9D2CD1D9" referredColumn="357C4258-FF09-7828-843C-7888D6858584"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="BADBCEBE-358F-943A-1569-55DA1A2DDBE9" name="Agencia_sucursal_PK">
+<ind_PK_UK id="84F6E318-72BE-FF63-9115-3F470E997A43" name="Agencia_sucursal_PK">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-15 10:01:13 UTC</createdTime>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <generatorID>2E4B16D9-703B-445C-8BE7-3A718045B7CB</generatorID>
 <ownerDesignName>Diagrama</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="2275BC56-790A-32FE-3BE9-C5A8937A1F37"/>
+<colUsage columnID="667D93F9-C358-1F4C-496A-51E7BA85EFE4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0B66DC92-83F2-A206-4615-CB2E59AC0F7E" name="Agencia_sucursal_Ubucacion_FK">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-22 20:35:46 UTC</createdTime>
+<generatorID>08ED5004-3D5D-D786-60C5-63ED3B613DE3</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA99CA2D-60ED-C565-1942-4C0402A110DB"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

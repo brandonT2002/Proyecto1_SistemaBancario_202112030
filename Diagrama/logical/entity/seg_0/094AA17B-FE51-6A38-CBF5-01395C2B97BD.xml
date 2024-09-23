@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="094AA17B-FE51-6A38-CBF5-01395C2B97BD" name="Ubucacion">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-22 20:07:12 UTC</createdTime>
+<ownerDesignName>Diagrama</ownerDesignName>
+<engineerTo>
+<item key="551B6461-CA27-D845-6439-9DF4BDC9EF04" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_ubicacion" id="77664C27-7DFB-CC23-A755-A49A1FD29516">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-22 20:10:16 UTC</createdTime>
+<ownerDesignName>Diagrama</ownerDesignName>
+<engineerTo>
+<item key="551B6461-CA27-D845-6439-9DF4BDC9EF04" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Departamento" id="F24D2697-298B-5605-6E95-E452EBD86AE2">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-22 20:10:52 UTC</createdTime>
+<ownerDesignName>Diagrama</ownerDesignName>
+<engineerTo>
+<item key="551B6461-CA27-D845-6439-9DF4BDC9EF04" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Municipio" id="86D8730B-8B22-982B-5A09-6B277C00F323">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-22 20:11:25 UTC</createdTime>
+<ownerDesignName>Diagrama</ownerDesignName>
+<engineerTo>
+<item key="551B6461-CA27-D845-6439-9DF4BDC9EF04" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C7E7405E-A3DD-378E-C281-E8555ED54817" name="Ubucacion PK">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-22 20:10:42 UTC</createdTime>
+<ownerDesignName>Diagrama</ownerDesignName>
+<engineerTo>
+<item key="551B6461-CA27-D845-6439-9DF4BDC9EF04" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>77664C27-7DFB-CC23-A755-A49A1FD29516</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

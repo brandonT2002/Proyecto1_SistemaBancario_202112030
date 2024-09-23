@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F6EF80C0-DD00-9AD2-C07F-1F41F7EA91E4" name="Rol">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F100F32D-C4D0-2212-640E-964136F88A36" name="Rol">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-16 13:06:14 UTC</createdTime>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <generatorID>7D4BF7BB-1612-589C-2B2E-BE274C90EEFF</generatorID>
 <ownerDesignName>Diagrama</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="Id_rol" id="F7FC239A-1C78-5371-9B19-5E91587F35DC">
+<Column name="Id_rol" id="7AA9EE17-F6D9-3337-3E00-41CD2934F73A">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-16 13:06:14 UTC</createdTime>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <generatorID>02C3F3F8-EE7F-E756-90B8-4EBBECA267FD</generatorID>
 <ownerDesignName>Diagrama</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -19,9 +19,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Nombre" id="2798E0FE-5D8C-5250-412C-FF31FFB3ECE1">
+<Column name="Nombre" id="F7267827-A6AA-9179-E786-3AA171E8F6FF">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-16 13:06:14 UTC</createdTime>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <generatorID>38D9F1C8-2178-56E3-B6CF-4FD994EDAD2B</generatorID>
 <ownerDesignName>Diagrama</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -33,16 +33,16 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="30352E12-7933-D314-3E3A-DB09D6F5D5BE" name="Rol_PK">
+<ind_PK_UK id="E938F387-CD05-E16D-2A58-7B4613CCCB6B" name="Rol_PK">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-16 13:06:14 UTC</createdTime>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <generatorID>48EEE01C-B339-C03D-BC6A-E099CCEA44C4</generatorID>
 <ownerDesignName>Diagrama</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="F7FC239A-1C78-5371-9B19-5E91587F35DC"/>
+<colUsage columnID="7AA9EE17-F6D9-3337-3E00-41CD2934F73A"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

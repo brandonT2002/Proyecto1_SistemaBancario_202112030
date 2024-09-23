@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1482136B-7111-E42A-5001-CEC3172FE36D" name="Transaccion">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1851A755-6DA1-56F5-1D06-E40ED94E8849" name="Transaccion">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-15 09:42:56 UTC</createdTime>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <generatorID>29B6FB16-80F0-3647-605E-46ED1A393E39</generatorID>
 <ownerDesignName>Diagrama</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="Id_transaccion" id="12E11EAC-E5FA-70D3-BF6A-BE00060958B2">
+<Column name="Id_transaccion" id="64F06FEC-7574-2811-EA77-591735F9AEA0">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-15 09:42:56 UTC</createdTime>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <generatorID>5F2C8593-DE83-9D36-6327-EF1CFD9C19C9</generatorID>
 <ownerDesignName>Diagrama</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -20,9 +20,9 @@
 <ownDataTypeParameters>,20,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Tipo" id="E3BE8B5F-4E2B-CE2C-29CF-1A1CD0099DF2">
+<Column name="Tipo" id="A2D871FF-4B12-F00B-33AC-3BB5D4AB341D">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-15 09:42:56 UTC</createdTime>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <generatorID>F6E939F1-B236-1F3B-7211-EBE2957D9E1F</generatorID>
 <ownerDesignName>Diagrama</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -32,9 +32,9 @@
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Monto" id="5E89BE0E-B37B-5E9D-FE64-913DF0B1D2A9">
+<Column name="Monto" id="64E3399B-CA3D-5B93-187F-1411D39A0C51">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-15 09:42:56 UTC</createdTime>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <generatorID>E52B4AEB-FD2A-C9FC-D2CA-B1DAA6FFA79E</generatorID>
 <ownerDesignName>Diagrama</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -44,9 +44,9 @@
 <ownDataTypeParameters>,20,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Fecha" id="63D3ACA0-9448-79A4-EB95-7D619651FE84">
+<Column name="Fecha" id="9B7E676C-7582-FF88-EFAC-95061BF2DB72">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-15 09:42:56 UTC</createdTime>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <generatorID>84E8398A-E404-1034-D086-FAA32885F732</generatorID>
 <ownerDesignName>Diagrama</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -55,9 +55,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Hora" id="DA958C96-86C4-32F4-D13E-F076407BD957">
+<Column name="Hora" id="AD27B097-1E2A-B61C-D2FE-D26F92E00317">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-15 09:42:56 UTC</createdTime>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <generatorID>822EE0A2-A697-C45F-7B89-235F9596D3D8</generatorID>
 <ownerDesignName>Diagrama</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -67,9 +67,9 @@
 <ownDataTypeParameters>,10,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Descripcion" id="A171CA1E-8038-89C0-2AAC-E6CCE687F6F8">
+<Column name="Descripcion" id="0A11E4D6-6AF0-0277-1A89-C1830CAD42A4">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-15 09:42:56 UTC</createdTime>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <generatorID>C177B826-E35A-A0BF-B0D5-A72161EA22C8</generatorID>
 <ownerDesignName>Diagrama</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -80,25 +80,24 @@
 <ownDataTypeParameters>35,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Cuenta_Id_cuenta" id="0B465490-0597-B175-BF1A-2BAE49DF2EA8">
+<Column name="Cuenta_Id_cuenta" id="0160417B-5855-2D1D-B6F2-5C9EC47B4F69">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-15 09:42:56 UTC</createdTime>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <generatorID>93A4E475-2B54-5631-0937-41EA9AAEB8BA</generatorID>
 <ownerDesignName>Diagrama</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypeSize>20</dataTypeSize>
-<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="2C9555CF-8B4D-E500-CADE-514B38057309" referredColumn="075AA717-C92E-3BE7-2A5C-606CFDDFF30E"/>
+<colAssociation fkAssociation="0ACAC0B7-75B0-5C3F-954E-5949C2A40A8D" referredColumn="9B7AC140-D3E6-DC53-EE71-A93CB6325A72"/>
 </associations>
 </Column>
-<Column name="Agencia_sucursal_Id_agencia" id="C34D07C9-8461-D19F-4169-F0B2A0647DBF">
+<Column name="Agencia_sucursal_Id_agencia" id="FF5C7600-610A-A2E1-42B2-A5EBFD2FDC7B">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-15 10:01:58 UTC</createdTime>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <generatorID>8E19E8B1-732D-888F-4633-D8BDF5F27AFA</generatorID>
 <ownerDesignName>Diagrama</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -108,12 +107,12 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="ED73EEC2-DF36-CF44-3903-FC907F03158B" referredColumn="2275BC56-790A-32FE-3BE9-C5A8937A1F37"/>
+<colAssociation fkAssociation="156E4889-FF5C-A6B1-FF8F-58F52A387F0F" referredColumn="667D93F9-C358-1F4C-496A-51E7BA85EFE4"/>
 </associations>
 </Column>
-<Column name="Empleado_Id_empleado" id="EF217115-1DB0-2805-3CEB-783882D95C8D">
+<Column name="Empleado_Id_empleado" id="7D36FE81-90A2-780A-E9C7-3326BDEFA4EA">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-16 13:06:14 UTC</createdTime>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <generatorID>C8C8951F-D886-3C28-4D16-C6EE696A02E1</generatorID>
 <ownerDesignName>Diagrama</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -123,12 +122,12 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="94F21852-6C79-C061-CB89-332BB10BBD02" referredColumn="2636D2CB-07AC-A49D-54F3-280CC78E4619"/>
+<colAssociation fkAssociation="E3021F31-2077-E51A-0BA7-7AA6C2716872" referredColumn="3B4E33EC-B1E8-82F4-5C9A-1D3819EF45B5"/>
 </associations>
 </Column>
-<Column name="Cliente_Id_cliente" id="D77BD7B4-D0C5-B47F-96AC-D7A91209A937">
+<Column name="Cliente_Id_cliente" id="B249BDFF-4EEA-7EFA-A276-65E1E353E0AF">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-16 13:06:14 UTC</createdTime>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <generatorID>DFF64FA3-5802-44F6-DE37-68D40B558286</generatorID>
 <ownerDesignName>Diagrama</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -138,65 +137,103 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="FB49B030-43D0-88C2-64B8-1129CB53A365" referredColumn="55F34C68-7E43-5232-38D2-E1C6D8DC39F9"/>
+<colAssociation fkAssociation="15B31853-4C86-1FC6-42BB-AC4FB18F8433" referredColumn="0E89D18E-BB29-4C5B-A15C-2841D1941BF0"/>
 </associations>
+</Column>
+<Column name="Tarjeta_Id_tarjeta" id="710DB17F-F5D3-315A-7359-14FCB8484B60">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-16 21:56:51 UTC</createdTime>
+<generatorID>83298B5B-9B36-54FC-A757-6E89117349E9</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4744F6D3-CABC-3C54-62F7-AA0A2B42B4CC" referredColumn="EFD79F53-3AD7-1E77-F2C3-55990F24197F"/>
+</associations>
+</Column>
+<Column name="Id_ubicacion" id="34EDD7C2-65D0-D479-FEFD-5D46ABD7A2FE">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-22 20:35:46 UTC</createdTime>
+<generatorID>559F99F3-153A-8E93-B735-495D45F8FEB7</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="0DAE52C5-F25A-B172-B817-3F17F74BE7DC" name="Transaccion_PK">
+<ind_PK_UK id="0D280EC5-B3D1-6F1B-3A06-5606519EE016" name="Transaccion_PK">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-15 09:42:56 UTC</createdTime>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <generatorID>AC012351-848C-10AA-C9B6-4C6F48DD6DB0</generatorID>
 <ownerDesignName>Diagrama</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="12E11EAC-E5FA-70D3-BF6A-BE00060958B2"/>
+<colUsage columnID="64F06FEC-7574-2811-EA77-591735F9AEA0"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="D65A81E4-F1B8-EB6E-61E0-05AB061861F1" name="Transaccion_Cuenta_FK">
+<ind_PK_UK id="9A765480-55EF-2BCD-461C-B2E0539A3326" name="Transaccion_Empleado_FK">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-15 09:42:56 UTC</createdTime>
-<generatorID>960D6B11-A78D-9AF2-581B-1E50D3AC7213</generatorID>
-<ownerDesignName>Diagrama</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="0B465490-0597-B175-BF1A-2BAE49DF2EA8"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="B451BFBD-BB2D-0380-F053-D74AD17F2AA4" name="Transaccion_Agencia_sucursal_FK">
-<createdBy>Jefferson</createdBy>
-<createdTime>2024-09-15 10:01:58 UTC</createdTime>
-<generatorID>1BB77B4E-3818-91CE-404B-FD161FB8035C</generatorID>
-<ownerDesignName>Diagrama</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="C34D07C9-8461-D19F-4169-F0B2A0647DBF"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="84C4E559-AD03-FFB1-1962-2C0013D163A6" name="Transaccion_Empleado_FK">
-<createdBy>Jefferson</createdBy>
-<createdTime>2024-09-16 13:06:14 UTC</createdTime>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <generatorID>6C47A875-C1F1-11C5-98DB-43FDCE98A4DE</generatorID>
 <ownerDesignName>Diagrama</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="EF217115-1DB0-2805-3CEB-783882D95C8D"/>
+<colUsage columnID="7D36FE81-90A2-780A-E9C7-3326BDEFA4EA"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="353AA655-5BE2-BFCD-CD75-7760A80BDC3C" name="Transaccion_Cliente_FK">
+<ind_PK_UK id="BBD424F3-9A70-EE61-5F6C-ADA7993DA205" name="Transaccion_Cliente_FK">
 <createdBy>Jefferson</createdBy>
-<createdTime>2024-09-16 13:06:14 UTC</createdTime>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
 <generatorID>9D6A6201-EF5A-C483-56CC-B1D434D42B45</generatorID>
 <ownerDesignName>Diagrama</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="D77BD7B4-D0C5-B47F-96AC-D7A91209A937"/>
+<colUsage columnID="B249BDFF-4EEA-7EFA-A276-65E1E353E0AF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="33E149A4-1F4B-0537-A609-92301C2A659D" name="Transaccion_Cuenta_FK">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
+<generatorID>960D6B11-A78D-9AF2-581B-1E50D3AC7213</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0160417B-5855-2D1D-B6F2-5C9EC47B4F69"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="20068957-2526-9D39-336E-24ADEC2EF264" name="Transaccion_Agencia_sucursal_FK">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-16 21:54:49 UTC</createdTime>
+<generatorID>1BB77B4E-3818-91CE-404B-FD161FB8035C</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF5C7600-610A-A2E1-42B2-A5EBFD2FDC7B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="998C69F8-FC51-79E5-98C2-56924370377C" name="Transaccion_Tarjeta_FK">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-16 21:56:51 UTC</createdTime>
+<generatorID>A0F8CD40-2164-417C-71E9-FD40E4B8CB8A</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="710DB17F-F5D3-315A-7359-14FCB8484B60"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

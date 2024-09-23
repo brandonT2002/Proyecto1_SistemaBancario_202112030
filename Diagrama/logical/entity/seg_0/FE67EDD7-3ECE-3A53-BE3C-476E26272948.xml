@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FE67EDD7-3ECE-3A53-BE3C-476E26272948" name="Tipo_cuenta">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-22 20:28:46 UTC</createdTime>
+<ownerDesignName>Diagrama</ownerDesignName>
+<engineerTo>
+<item key="551B6461-CA27-D845-6439-9DF4BDC9EF04" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_tipo_cuenta" id="0E0B6D45-B8F1-BF47-C717-92760D75DB9E">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-22 20:29:14 UTC</createdTime>
+<ownerDesignName>Diagrama</ownerDesignName>
+<engineerTo>
+<item key="551B6461-CA27-D845-6439-9DF4BDC9EF04" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tipo" id="FD1F1126-1FB1-EC60-1476-CAE6F3763FEF">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-22 20:29:34 UTC</createdTime>
+<ownerDesignName>Diagrama</ownerDesignName>
+<engineerTo>
+<item key="551B6461-CA27-D845-6439-9DF4BDC9EF04" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_cuenta" id="05EDE606-44BE-9DF5-4A14-E32D46CE569C">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-22 20:30:53 UTC</createdTime>
+<generatorID>C6D91053-098B-E2DF-4F7D-E2F1F2827EE3</generatorID>
+<ownerDesignName>Diagrama</ownerDesignName>
+<engineerTo>
+<item key="551B6461-CA27-D845-6439-9DF4BDC9EF04" value="true"/>
+</engineerTo>
+<referedAttribute>302EEF67-7360-4942-0C14-A0B9D76FC8F3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F496DA82-418D-8505-2826-5ABC135F53D3" name="Tipo_cuenta PK">
+<createdBy>Jefferson</createdBy>
+<createdTime>2024-09-22 20:29:27 UTC</createdTime>
+<ownerDesignName>Diagrama</ownerDesignName>
+<engineerTo>
+<item key="551B6461-CA27-D845-6439-9DF4BDC9EF04" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0E0B6D45-B8F1-BF47-C717-92760D75DB9E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
