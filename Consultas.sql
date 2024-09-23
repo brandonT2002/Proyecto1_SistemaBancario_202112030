@@ -65,11 +65,21 @@ SELECT * FROM AGENCIA_SUCURSAL;
 
 -- CONSULTAS 'CUENTA ID'
 SELECT 
-    u.CLIENTE   AS "Nombre de CLIENTE",
-    c.NoCuenta  AS "Numero de Cuenta", 
-    c.Saldo     AS "Saldo de Cuenta"
+    u.Nombre || ' ' || u.Apellido   AS "Nombre",
+    c.No_cuenta                     AS "Numero de Cuenta",
+    c.Tipo                          AS "Tipo de Cuenta",
+    c.Saldo                         AS "Saldo de Cuenta"
 FROM CUENTA c
-JOIN CLIENTE u ON c.UsuarioId = u.Id
-WHERE u.CLIENTE = 'Brandon Tejaxun';
+JOIN CLIENTE u ON c.Cliente_id_cliente = u.Id_cliente
+WHERE u.Id_cliente = 1;
 
-
+-- CONSULTAS 'TARJETA ID'
+SELECT
+    u.Nombre || ' ' || u.Apellido   AS "Nombre",
+    t.No_tarjeta                    AS "Numero de Tarjeta",
+    t.Limite_credito                AS "Limite de Credito",
+    t.Saldo_actual                  AS "Saldo Actual",
+    t.Fecha_vencimiento             AS "Fecha de Vencimiento"
+FROM TARJETA t
+JOIN CLIENTE u ON t.Id_cliente = u.Id_cliente
+WHERE u.Id_cliente = 1;
